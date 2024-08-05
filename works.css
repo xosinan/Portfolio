@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    font-weight: light;
+}
+
+.hero {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    z-index: -1; /* Place behind other elements */
+}
+
+nav {
+    position: absolute;
+    top: 25px; /* Adjust top positioning as needed */
+    left: 160px; /* Adjust left positioning as needed */
+    display: flex;
+    align-items: center;
+    z-index: 1; /* Ensure nav is above the video */
+}
+
+nav .logo {
+    width: 150px;
+}
+.upwork-logo{
+    width: 40px;
+    text-decoration: none;
+    margin-left: 1720px;
+
+}
+
+.container {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #ad7979;
+    color: #fff; /* Text color for the container */
+    display: inline-block;
+    padding: 14px 70px; /* Adjust padding as needed */
+    border-radius: 50px; /* Round the corners */
+    text-align: center;
+    z-index: 1; /* Ensure it's above the video */
+    margin-top: 20px;
+}
+
+.container a {
+    color: black; /* Ensure link text color is white */
+    text-decoration: none; /* Remove underline from link */
+    transition: transform 0.5s; /* Add transition property */
+    display: inline-block; /* Ensure a is inline-block for proper scaling */
+}
+
+.container a:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+
+.content{
+    margin-bottom: 20%;
+    text-align:left;
+    font-size: 18px;
+    color: #ad7979;
+    font-weight:lighter;
+    transition: 0.5s;
+}
+
+.content:hover{
+transform: scale(1.1);
+
+}
+
+.rectangle {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; /* Adjust the width as needed */
+    height: 800px; /* Adjust the height as needed */
+    background-color: black;
+    z-index: -1; /* Ensure it's behind other elements */
+}
+
+.footer {
+    position: absolute;
+    background-color: #06005c; /* Dark blue background */
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distributes space between left and right content */
+    align-items: center;
+    max-width: 1200px; /* Sets a max-width for the content */
+    margin: 0 auto; /* Centers the content */
+    padding: 0 20px; /* Adds padding to the sides */
+}
+
+.footer-left, .footer-right {
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-left {
+    text-align: left;
+    margin-left: -400px; /* Moves text more to the left */
+}
+
+.footer-right {
+    text-align: right;
+    margin-right: -400px;
+}
